@@ -1,0 +1,15 @@
+D:\Amir repos\web_shop_api\WebShop.Application\bin\Debug\net7.0\WebShop.Application.deps.json
+D:\Amir repos\web_shop_api\WebShop.Application\bin\Debug\net7.0\WebShop.Application.dll
+D:\Amir repos\web_shop_api\WebShop.Application\bin\Debug\net7.0\WebShop.Application.pdb
+D:\Amir repos\web_shop_api\WebShop.Application\bin\Debug\net7.0\WebShop.Domain.dll
+D:\Amir repos\web_shop_api\WebShop.Application\bin\Debug\net7.0\WebShop.Domain.pdb
+D:\Amir repos\web_shop_api\WebShop.Application\obj\Debug\net7.0\WebShop.Application.csproj.AssemblyReference.cache
+D:\Amir repos\web_shop_api\WebShop.Application\obj\Debug\net7.0\WebShop.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Amir repos\web_shop_api\WebShop.Application\obj\Debug\net7.0\WebShop.Application.AssemblyInfoInputs.cache
+D:\Amir repos\web_shop_api\WebShop.Application\obj\Debug\net7.0\WebShop.Application.AssemblyInfo.cs
+D:\Amir repos\web_shop_api\WebShop.Application\obj\Debug\net7.0\WebShop.Application.csproj.CoreCompileInputs.cache
+D:\Amir repos\web_shop_api\WebShop.Application\obj\Debug\net7.0\WebShop.Application.csproj.CopyComplete
+D:\Amir repos\web_shop_api\WebShop.Application\obj\Debug\net7.0\WebShop.Application.dll
+D:\Amir repos\web_shop_api\WebShop.Application\obj\Debug\net7.0\refint\WebShop.Application.dll
+D:\Amir repos\web_shop_api\WebShop.Application\obj\Debug\net7.0\WebShop.Application.pdb
+D:\Amir repos\web_shop_api\WebShop.Application\obj\Debug\net7.0\ref\WebShop.Application.dll

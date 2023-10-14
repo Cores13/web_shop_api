@@ -1,0 +1,7 @@
+D:\Amir repos\web_shop_api\WebShop.API\obj\Debug\net7.0\WebShop.API.csproj.AssemblyReference.cache
+D:\Amir repos\web_shop_api\WebShop.API\obj\Debug\net7.0\WebShop.API.GeneratedMSBuildEditorConfig.editorconfig
+D:\Amir repos\web_shop_api\WebShop.API\obj\Debug\net7.0\WebShop.API.AssemblyInfoInputs.cache
+D:\Amir repos\web_shop_api\WebShop.API\obj\Debug\net7.0\WebShop.API.AssemblyInfo.cs
+D:\Amir repos\web_shop_api\WebShop.API\obj\Debug\net7.0\WebShop.API.csproj.CoreCompileInputs.cache
+D:\Amir repos\web_shop_api\WebShop.API\obj\Debug\net7.0\WebShop.API.MvcApplicationPartsAssemblyInfo.cs
+D:\Amir repos\web_shop_api\WebShop.API\obj\Debug\net7.0\WebShop.API.MvcApplicationPartsAssemblyInfo.cache

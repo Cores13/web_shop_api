@@ -1,0 +1,12 @@
+D:\Amir repos\web_shop_api\Infrastructure\bin\Debug\net7.0\Infrastructure.deps.json
+D:\Amir repos\web_shop_api\Infrastructure\bin\Debug\net7.0\Infrastructure.dll
+D:\Amir repos\web_shop_api\Infrastructure\bin\Debug\net7.0\Infrastructure.pdb
+D:\Amir repos\web_shop_api\Infrastructure\obj\Debug\net7.0\Infrastructure.csproj.AssemblyReference.cache
+D:\Amir repos\web_shop_api\Infrastructure\obj\Debug\net7.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Amir repos\web_shop_api\Infrastructure\obj\Debug\net7.0\Infrastructure.AssemblyInfoInputs.cache
+D:\Amir repos\web_shop_api\Infrastructure\obj\Debug\net7.0\Infrastructure.AssemblyInfo.cs
+D:\Amir repos\web_shop_api\Infrastructure\obj\Debug\net7.0\Infrastructure.csproj.CoreCompileInputs.cache
+D:\Amir repos\web_shop_api\Infrastructure\obj\Debug\net7.0\Infrastructure.dll
+D:\Amir repos\web_shop_api\Infrastructure\obj\Debug\net7.0\refint\Infrastructure.dll
+D:\Amir repos\web_shop_api\Infrastructure\obj\Debug\net7.0\Infrastructure.pdb
+D:\Amir repos\web_shop_api\Infrastructure\obj\Debug\net7.0\ref\Infrastructure.dll
