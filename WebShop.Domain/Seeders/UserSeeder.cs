@@ -1,4 +1,5 @@
-﻿using WebShop.Domain.Entities;
+﻿using WebShop.Domain.Enums;
+using WebShop.Domain.Entities;
 
 namespace WebShop.Domain.Seeders
 {
@@ -14,7 +15,7 @@ namespace WebShop.Domain.Seeders
                 Id = 1,
                 Name = "System Administrator",
                 Email = "sysadmin@solution403.com",
-                Role = Domain.Enums.UserRoleEnum.SystemAdministrator,
+                Role = WebShop.Domain.Enums.UserRoleEnum.SystemAdministrator,
                 PasswordHash = passwordHash,
                 PasswordSalt = passwordSalt,
             },
@@ -24,7 +25,7 @@ namespace WebShop.Domain.Seeders
                 Id = 3,
                 Name = "User",
                 Email = "user@solution403.com",
-                Role = Domain.Enums.UserRoleEnum.User,
+                Role = WebShop.Domain.Enums.UserRoleEnum.User,
                 PasswordHash = passwordHash,
                 PasswordSalt = passwordSalt,
             },

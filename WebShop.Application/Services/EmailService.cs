@@ -5,7 +5,7 @@ using System.Net.Mail;
 using TestApp.Database.Models;
 using TestApp.Services.Interfaces;
 
-namespace TestApp.Services
+namespace WebShop.Application.Services
 {
     public class EmailService: IEmailService
     {

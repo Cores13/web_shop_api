@@ -10,7 +10,7 @@ using TestApp.Database.Models;
 using TestApp.Database;
 using TestApp.Services.Interfaces;
 
-namespace TestApp.Services
+namespace WebShop.Application.Services
 {
     public class AuthService: IAuthService
     {

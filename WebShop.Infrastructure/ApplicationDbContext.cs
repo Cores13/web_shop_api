@@ -1,12 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using WebShop.Domain.Entities;
-using System.Reflection.Emit;
-using System.Xml.Linq;
 
 namespace WebShop.Infrastructure
 {
@@ -20,25 +13,9 @@ namespace WebShop.Infrastructure
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<User>().HasData(SeedData.UserSeed.Data);
-            modelBuilder.Entity<Category>().HasData(SeedData.CategorySeed.Data);
-            modelBuilder.Entity<News>().HasData(SeedData.NewsSeed.Data);
-            modelBuilder.Entity<Faq>().HasData(SeedData.FaqSeed.Data);
-            modelBuilder.Entity<Comments>().HasData(SeedData.CommentSeed.Data);
-            modelBuilder.Entity<File>().HasData(SeedData.FileSeed.Data);
 
             // CreatedOn
             modelBuilder.Entity<User>().Property(x => x.CreatedOn).HasDefaultValueSql("GETUTCDATE()");
-            modelBuilder.Entity<RefreshToken>().Property(x => x.CreatedOn).HasDefaultValueSql("GETUTCDATE()");
-            modelBuilder.Entity<Log>().Property(x => x.CreatedOn).HasDefaultValueSql("GETUTCDATE()");
-            modelBuilder.Entity<UserFcmToken>().Property(x => x.CreatedOn).HasDefaultValueSql("GETUTCDATE()");
-            modelBuilder.Entity<Faq>().Property(x => x.CreatedOn).HasDefaultValueSql("GETUTCDATE()");
-            modelBuilder.Entity<Category>().Property(x => x.CreatedOn).HasDefaultValueSql("GETUTCDATE()");
-            modelBuilder.Entity<News>().Property(x => x.CreatedOn).HasDefaultValueSql("GETUTCDATE()");
-            modelBuilder.Entity<Comments>().Property(x => x.CreatedOn).HasDefaultValueSql("GETUTCDATE()");
-            modelBuilder.Entity<Question>().Property(x => x.CreatedOn).HasDefaultValueSql("GETUTCDATE()");
-            modelBuilder.Entity<UserCategory>().Property(x => x.CreatedOn).HasDefaultValueSql("GETUTCDATE()");
-            modelBuilder.Entity<File>().Property(x => x.CreatedOn).HasDefaultValueSql("GETUTCDATE()");
-            modelBuilder.Entity<Notification>().Property(x => x.CreatedOn).HasDefaultValueSql("GETUTCDATE()");
 
 
             // Unique indexes
@@ -46,9 +23,6 @@ namespace WebShop.Infrastructure
               .HasMany(e => e.RefreshTokens)
               .WithOne(d => d.User)
               .OnDelete(DeleteBehavior.Restrict);
-
-            // Filter deleted
-            modelBuilder.Entity<User>().HasQueryFilter(x => x.DeletedOn == null);
 
             base.OnModelCreating(modelBuilder);
         }
