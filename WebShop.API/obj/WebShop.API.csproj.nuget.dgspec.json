@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Amir repos\\web_shop_api\\webshop.api\\WebShop.API.csproj": {}
+    "D:\\Amir repos\\web_shop_api\\WebShop.API\\WebShop.API.csproj": {}
   },
   "projects": {
-    "D:\\Amir repos\\web_shop_api\\webshop.api\\WebShop.API.csproj": {
+    "D:\\Amir repos\\web_shop_api\\WebShop.API\\WebShop.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Amir repos\\web_shop_api\\webshop.api\\WebShop.API.csproj",
+        "projectUniqueName": "D:\\Amir repos\\web_shop_api\\WebShop.API\\WebShop.API.csproj",
         "projectName": "WebShop.API",
-        "projectPath": "D:\\Amir repos\\web_shop_api\\webshop.api\\WebShop.API.csproj",
+        "projectPath": "D:\\Amir repos\\web_shop_api\\WebShop.API\\WebShop.API.csproj",
         "packagesPath": "C:\\Users\\Amir\\.nuget\\packages\\",
-        "outputPath": "D:\\Amir repos\\web_shop_api\\webshop.api\\obj\\",
+        "outputPath": "D:\\Amir repos\\web_shop_api\\WebShop.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

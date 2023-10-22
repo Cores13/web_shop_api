@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nPQqZqYQ+79zkb84SksP4B7Iq6fjfo9QJIwhJw9cS5TKRB5BJADwb9JUaLfJ1PRlu8hLmREtoCLGxisC9O3Uug==",
+  "dgSpecHash": "dC+Y23jmwmDYo8BJ0vpDscAbZw9PIabO2eLgySI3WGvAyiwEtcLKQ6lpfMBhe/FPC7eNeN5flp299Qw9Msdgrw==",
   "success": true,
-  "projectFilePath": "D:\\Amir repos\\web_shop_api\\webshop.api\\WebShop.API.csproj",
+  "projectFilePath": "D:\\Amir repos\\web_shop_api\\WebShop.API\\WebShop.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Amir\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Amir\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
