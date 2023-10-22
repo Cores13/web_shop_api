@@ -10,11 +10,14 @@
     <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.7.1" />
     <PackageReference Include="MailKit" Version="4.2.0" />
     <PackageReference Include="MediatR" Version="12.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
     <PackageReference Include="MimeKit" Version="4.2.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.0.3" />
   </ItemGroup>
 
 	<ItemGroup>
 		<ProjectReference Include="..\WebShop.Domain\WebShop.Domain.csproj" />
+		<ProjectReference Include="..\WebShop.Infrastructure\WebShop.Infrastructure.csproj" />
 	</ItemGroup>
 
 </Project>

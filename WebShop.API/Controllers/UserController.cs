@@ -1,19 +1,20 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using TestApp.Database;
-using TestApp.Database.DTOs;
-using TestApp.Database.Models;
+using WebShop.Domain;
+using WebShop.Domain.DTOs;
+using WebShop.Domain.Entities;
+using WebShop.Infrastructure;
 
-namespace TestApp.Controllers
+namespace WebShop.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
     public class UserController : ControllerBase
     {
         private readonly IConfiguration _configuration;
-        private readonly DataContext _context;
-        public UserController(IConfiguration configuration, DataContext context)
+        private readonly ApplicationDbContext _context;
+        public UserController(IConfiguration configuration, ApplicationDbContext context)
         {
             _configuration = configuration;
             _context = context;

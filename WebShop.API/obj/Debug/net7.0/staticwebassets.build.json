@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "SVhT104oUoYKHti6wcuOnoyiyFCNx/LnhsmZIo689OY=",
-  "Source": "web_shop_api",
-  "BasePath": "_content/web_shop_api",
+  "Hash": "NCohVLg97Ox7QNsNL2nc2pKM/CIJbSuGF282j9bZ+Jo=",
+  "Source": "WebShop.API",
+  "BasePath": "_content/WebShop.API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

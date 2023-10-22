@@ -13,3 +13,5 @@ D:\Amir repos\web_shop_api\WebShop.Application\obj\Debug\net7.0\WebShop.Applicat
 D:\Amir repos\web_shop_api\WebShop.Application\obj\Debug\net7.0\refint\WebShop.Application.dll
 D:\Amir repos\web_shop_api\WebShop.Application\obj\Debug\net7.0\WebShop.Application.pdb
 D:\Amir repos\web_shop_api\WebShop.Application\obj\Debug\net7.0\ref\WebShop.Application.dll
+D:\Amir repos\web_shop_api\WebShop.Application\bin\Debug\net7.0\WebShop.Infrastructure.dll
+D:\Amir repos\web_shop_api\WebShop.Application\bin\Debug\net7.0\WebShop.Infrastructure.pdb

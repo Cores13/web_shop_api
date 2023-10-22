@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "NlfWS0UrId1MyN1YZDwHFni5CPhw839IrCGnCLKvIsvV6RcEe2P+yM8KoBIeGPrF8o1USJBo46WU7G+rfwaFUQ==",
+  "dgSpecHash": "ZfToGr0p3mQL4rFo5cP6AvqYFxb7WW47bJRNFg++xelNXMPBvCfK42aXpAbeUva20rpdC8jegWBWXi40nuJgGA==",
   "success": true,
   "projectFilePath": "D:\\Amir repos\\web_shop_api\\WebShop.Infrastructure\\WebShop.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -20,6 +20,7 @@
     "C:\\Users\\Amir\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\7.0.12\\microsoft.entityframeworkcore.tools.7.0.12.nupkg.sha512",
     "C:\\Users\\Amir\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\Amir\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
+    "C:\\Users\\Amir\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "C:\\Users\\Amir\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\Amir\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
     "C:\\Users\\Amir\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",

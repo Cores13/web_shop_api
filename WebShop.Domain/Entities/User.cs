@@ -4,14 +4,14 @@ namespace WebShop.Domain.Entities
 {
     public sealed class User : Entity
     {
-        private User(Guid id, string name, string email, string username, byte[] passwordHash, byte[] passwordSalt, Role role) : base(id)
+        public User(Guid id, string name, string email, string username, byte[] passwordHash, byte[] passwordSalt, int role) : base(id)
         {
             Name = name;
             Email = email;
             Username = username;
             PasswordHash = passwordHash;
             PasswordSalt = passwordSalt;
-            RoleId = role.Id;
+            Role = role;
         }
 
 
@@ -33,7 +33,7 @@ namespace WebShop.Domain.Entities
 
         public DateTime ResetPasswordExpiry { get; set; }
 
-        public Guid RoleId { get; set; }
+        public int Role { get; set; }
 
     }
 }

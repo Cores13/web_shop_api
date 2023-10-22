@@ -1,7 +1,8 @@
-using Application;
-using Infrastructure;
+using WebShop.Application;
+using WebShop.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
+using Microsoft.Extensions.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,18 +12,17 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
 builder.Services
     .AddApplication()
-    .AddInfrastructure();
+    .AddInfrastructure(builder.Configuration);
 
-builder.Services.AddDbContext<ApplicationDbContext>(
-    dbContextOptionsBuilder =>
-    {
-        var connectionString = builder.Configuration.GetConnectionString("Default");
+//builder.Services.AddDbContext<ApplicationDbContext>(
+//    dbContextOptionsBuilder =>
+//    {
+//        var connectionString = builder.Configuration.GetConnectionString("Default");
 
-        dbContextOptionsBuilder.UseSqlServer(connectionString);
-    });
+//        dbContextOptionsBuilder.UseSqlServer(connectionString);
+//    });
 
 builder.Host.UseSerilog((context, configuration) =>
     configuration.ReadFrom.Configuration(context.Configuration));
@@ -35,6 +35,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseProjectSqlServer();
 
 app.UseSerilogRequestLogging();
 

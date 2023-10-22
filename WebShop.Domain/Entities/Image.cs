@@ -4,14 +4,16 @@ namespace WebShop.Domain.Entities
 {
     public sealed class Image : Entity
     {
-        private Image(Guid id, string path, Product produict) : base(id)
+        public Image(Guid id, string path, Guid productId) : base(id)
         {
             Path = path;
-            ProductId = produict.Id;
+            ProductId = productId;
         }
+
+        public string Path { get; set; }
 
         public Guid ProductId { get; set; }
 
-        public string Path { get; set; }
+        public Product Product { get; set; }
     }
 }

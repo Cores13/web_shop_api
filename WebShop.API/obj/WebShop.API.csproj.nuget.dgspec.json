@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Amir repos\\web_shop_api\\WebShop.API\\WebShop.API.csproj": {}
+    "D:\\Amir repos\\web_shop_api\\webshop.api\\WebShop.API.csproj": {}
   },
   "projects": {
-    "D:\\Amir repos\\web_shop_api\\WebShop.API\\WebShop.API.csproj": {
+    "D:\\Amir repos\\web_shop_api\\webshop.api\\WebShop.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Amir repos\\web_shop_api\\WebShop.API\\WebShop.API.csproj",
+        "projectUniqueName": "D:\\Amir repos\\web_shop_api\\webshop.api\\WebShop.API.csproj",
         "projectName": "WebShop.API",
-        "projectPath": "D:\\Amir repos\\web_shop_api\\WebShop.API\\WebShop.API.csproj",
+        "projectPath": "D:\\Amir repos\\web_shop_api\\webshop.api\\WebShop.API.csproj",
         "packagesPath": "C:\\Users\\Amir\\.nuget\\packages\\",
-        "outputPath": "D:\\Amir repos\\web_shop_api\\WebShop.API\\obj\\",
+        "outputPath": "D:\\Amir repos\\web_shop_api\\webshop.api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -139,6 +139,9 @@
             "projectReferences": {
               "D:\\Amir repos\\web_shop_api\\WebShop.Domain\\WebShop.Domain.csproj": {
                 "projectPath": "D:\\Amir repos\\web_shop_api\\WebShop.Domain\\WebShop.Domain.csproj"
+              },
+              "D:\\Amir repos\\web_shop_api\\WebShop.Infrastructure\\WebShop.Infrastructure.csproj": {
+                "projectPath": "D:\\Amir repos\\web_shop_api\\WebShop.Infrastructure\\WebShop.Infrastructure.csproj"
               }
             }
           }
@@ -165,9 +168,17 @@
               "target": "Package",
               "version": "[12.1.1, )"
             },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "MimeKit": {
               "target": "Package",
               "version": "[4.2.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[7.0.3, )"
             }
           },
           "imports": [
@@ -315,6 +326,10 @@
               "target": "Package",
               "version": "[7.0.12, )"
             },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
               "version": "[7.0.0, )"
@@ -332,6 +347,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

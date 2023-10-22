@@ -6,17 +6,18 @@ using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text.RegularExpressions;
 using System.Text;
-using TestApp.Database.Models;
-using TestApp.Database;
-using TestApp.Services.Interfaces;
+using WebShop.Domain.Entities;
+using WebShop.Domain;
+using WebShop.Application.Interfaces;
+using WebShop.Infrastructure;
 
 namespace WebShop.Application.Services
 {
-    public class AuthService: IAuthService
+    public class AuthService : IAuthService
     {
         private readonly IConfiguration _configuration;
-        private readonly DataContext _context;
-        public AuthService(IConfiguration configuration, DataContext context)
+        private readonly ApplicationDbContext _context;
+        public AuthService(IConfiguration configuration, ApplicationDbContext context)
         {
             _configuration = configuration;
             _context = context;
@@ -48,7 +49,7 @@ namespace WebShop.Application.Services
             {
                 new Claim(ClaimTypes.Name, user.Username),
                 new Claim(ClaimTypes.Email, user.Email),
-                new Claim(ClaimTypes.Role, user.Role)
+                new Claim(ClaimTypes.Role, user.Role.ToString())
             });
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(

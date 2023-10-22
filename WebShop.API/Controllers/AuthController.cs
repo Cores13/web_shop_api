@@ -8,25 +8,26 @@ using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
-using TestApp.Database;
-using TestApp.Database.DTOs;
-using TestApp.Database.Models;
+using WebShop.Domain;
+using WebShop.Domain.DTOs;
+using WebShop.Domain.Entities;
 using System.Security.Principal;
-using TestApp.Services;
-using TestApp.Services.Interfaces;
+using WebShop.Application;
+using WebShop.Application.Interfaces;
+using WebShop.Infrastructure;
 
-namespace TestApp.Controllers
+namespace WebShop.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
     public class AuthController : ControllerBase
     {
         private readonly IConfiguration _configuration;
-        private readonly DataContext _context;
+        private readonly ApplicationDbContext _context;
         private readonly IAuthService _authService;
         private readonly IEmailService _emailService;
 
-        public AuthController(IConfiguration configuration, DataContext context, IAuthService authService, IEmailService emailService)
+        public AuthController(IConfiguration configuration, ApplicationDbContext context, IAuthService authService, IEmailService emailService)
         {
             _configuration = configuration;
             _context = context;
@@ -67,16 +68,16 @@ namespace TestApp.Controllers
 
             _authService.CreatePasswordHash(request.Password, out byte[] passwordHash, out byte[] passwordSalt);
 
-            User user = new()
-            {
-                FirstName = request.FirstName,
-                LastName = request.LastName,
-                Username = request.Username,
-                Email = request.Email,
-                PasswordHash = passwordHash,
-                PasswordSalt = passwordSalt,
-                Role = "Admin",
-            };
+            User user = new User
+                (
+                    id: Guid.NewGuid(),
+                    name: request.Name,
+                    email: request.Email,
+                    username: request.Username,
+                    passwordHash: passwordHash,
+                    passwordSalt: passwordSalt,
+                    role: 1
+                );
 
             var registeredUser = _context.Users.Add(user);
             await _context.SaveChangesAsync();

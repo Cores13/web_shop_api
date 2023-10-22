@@ -3,3 +3,15 @@ D:\Amir repos\web_shop_api\WebShop.Infrastructure\obj\Debug\net7.0\WebShop.Infra
 D:\Amir repos\web_shop_api\WebShop.Infrastructure\obj\Debug\net7.0\WebShop.Infrastructure.AssemblyInfoInputs.cache
 D:\Amir repos\web_shop_api\WebShop.Infrastructure\obj\Debug\net7.0\WebShop.Infrastructure.AssemblyInfo.cs
 D:\Amir repos\web_shop_api\WebShop.Infrastructure\obj\Debug\net7.0\WebShop.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Amir repos\web_shop_api\WebShop.Infrastructure\bin\Debug\net7.0\WebShop.Infrastructure.deps.json
+D:\Amir repos\web_shop_api\WebShop.Infrastructure\bin\Debug\net7.0\WebShop.Infrastructure.runtimeconfig.json
+D:\Amir repos\web_shop_api\WebShop.Infrastructure\bin\Debug\net7.0\WebShop.Infrastructure.dll
+D:\Amir repos\web_shop_api\WebShop.Infrastructure\bin\Debug\net7.0\WebShop.Infrastructure.pdb
+D:\Amir repos\web_shop_api\WebShop.Infrastructure\bin\Debug\net7.0\WebShop.Domain.dll
+D:\Amir repos\web_shop_api\WebShop.Infrastructure\bin\Debug\net7.0\WebShop.Domain.pdb
+D:\Amir repos\web_shop_api\WebShop.Infrastructure\obj\Debug\net7.0\WebShop.Infrastructure.csproj.CopyComplete
+D:\Amir repos\web_shop_api\WebShop.Infrastructure\obj\Debug\net7.0\WebShop.Infrastructure.dll
+D:\Amir repos\web_shop_api\WebShop.Infrastructure\obj\Debug\net7.0\refint\WebShop.Infrastructure.dll
+D:\Amir repos\web_shop_api\WebShop.Infrastructure\obj\Debug\net7.0\WebShop.Infrastructure.pdb
+D:\Amir repos\web_shop_api\WebShop.Infrastructure\obj\Debug\net7.0\WebShop.Infrastructure.genruntimeconfig.cache
+D:\Amir repos\web_shop_api\WebShop.Infrastructure\obj\Debug\net7.0\ref\WebShop.Infrastructure.dll

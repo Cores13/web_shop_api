@@ -5,7 +5,7 @@ namespace WebShop.Domain.Entities
 {
     public sealed class Product : Entity
     {
-        private Product(
+        public Product(
             Guid id,
             string name,
             string description,

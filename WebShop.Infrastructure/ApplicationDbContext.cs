@@ -9,66 +9,67 @@ namespace WebShop.Infrastructure
 
         public DbSet<Product> Products { get; set; }
         public DbSet<Image> Images { get; set; }
+        public DbSet<User> Users { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<User>().HasData(SeedData.UserSeed.Data);
+        //protected override void OnModelCreating(ModelBuilder modelBuilder)
+        //{
+        //    modelBuilder.Entity<User>().HasData(SeedData.UserSeed.Data);
 
-            // CreatedOn
-            modelBuilder.Entity<User>().Property(x => x.CreatedOn).HasDefaultValueSql("GETUTCDATE()");
+        //    // CreatedOn
+        //    modelBuilder.Entity<User>().Property(x => x.CreatedOn).HasDefaultValueSql("GETUTCDATE()");
 
 
-            // Unique indexes
-            modelBuilder.Entity<User>()
-              .HasMany(e => e.RefreshTokens)
-              .WithOne(d => d.User)
-              .OnDelete(DeleteBehavior.Restrict);
+        //    // Unique indexes
+        //    modelBuilder.Entity<User>()
+        //      .HasMany(e => e.RefreshTokens)
+        //      .WithOne(d => d.User)
+        //      .OnDelete(DeleteBehavior.Restrict);
 
-            base.OnModelCreating(modelBuilder);
-        }
+        //    base.OnModelCreating(modelBuilder);
+        //}
 
-        public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
-        {
-            ChangeTracker.DetectChanges();
-            OnBeforeSaving();
+        //public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
+        //{
+        //    ChangeTracker.DetectChanges();
+        //    OnBeforeSaving();
 
-            return await base.SaveChangesAsync(cancellationToken);
-        }
+        //    return await base.SaveChangesAsync(cancellationToken);
+        //}
 
-        public override int SaveChanges()
-        {
-            ChangeTracker.DetectChanges();
-            OnBeforeSaving();
+        //public override int SaveChanges()
+        //{
+        //    ChangeTracker.DetectChanges();
+        //    OnBeforeSaving();
 
-            return base.SaveChanges();
-        }
+        //    return base.SaveChanges();
+        //}
 
-        private void OnBeforeSaving()
-        {
-            var updatedEntries = ChangeTracker.Entries().Where(x => x.State != EntityState.Unchanged && x.State != EntityState.Detached && x.State != EntityState.Added);
+        //private void OnBeforeSaving()
+        //{
+        //    var updatedEntries = ChangeTracker.Entries().Where(x => x.State != EntityState.Unchanged && x.State != EntityState.Detached && x.State != EntityState.Added);
 
-            foreach (var entry in updatedEntries)
-            {
-                if (entry.State == EntityState.Deleted)
-                {
-                    if (entry.Entity is ISoftDelete deleteDate)
-                    {
-                        deleteDate.DeletedOn = DateTime.UtcNow;
-                        entry.State = EntityState.Modified;
-                    }
-                }
+        //    foreach (var entry in updatedEntries)
+        //    {
+        //        if (entry.State == EntityState.Deleted)
+        //        {
+        //            if (entry.Entity is ISoftDelete deleteDate)
+        //            {
+        //                deleteDate.DeletedOn = DateTime.UtcNow;
+        //                entry.State = EntityState.Modified;
+        //            }
+        //        }
 
-                if (entry.Entity is IBaseEntity updatedDate)
-                {
-                    updatedDate.UpdatedOn = DateTime.UtcNow;
-                    //entry.State = EntityState.Modified;
-                }
+        //        if (entry.Entity is IBaseEntity updatedDate)
+        //        {
+        //            updatedDate.UpdatedOn = DateTime.UtcNow;
+        //            //entry.State = EntityState.Modified;
+        //        }
 
-                if (entry.Entity is ISoftDelete updatedDate2)
-                {
-                    updatedDate2.UpdatedOn = DateTime.UtcNow;
-                }
-            }
-        }
+        //        if (entry.Entity is ISoftDelete updatedDate2)
+        //        {
+        //            updatedDate2.UpdatedOn = DateTime.UtcNow;
+        //        }
+        //    }
+        //}
     }
 }

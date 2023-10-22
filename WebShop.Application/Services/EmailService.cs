@@ -1,16 +1,19 @@
 ﻿using MailKit.Net.Smtp;
 using MailKit.Security;
+using Microsoft.Extensions.Configuration;
 using MimeKit;
 using System.Net.Mail;
-using TestApp.Database.Models;
-using TestApp.Services.Interfaces;
+using WebShop.Application.Interfaces;
+using WebShop.Domain.Entities;
+//using WebShop.Services.Interfaces;
 
 namespace WebShop.Application.Services
 {
-    public class EmailService: IEmailService
+    //public class EmailService
+    public class EmailService : IEmailService
     {
         private readonly IConfiguration _configuration;
-        public EmailService(IConfiguration configuration) 
+        public EmailService(IConfiguration configuration)
         {
             _configuration = configuration;
         }
@@ -39,7 +42,8 @@ namespace WebShop.Application.Services
                 catch (Exception e)
                 {
                     throw e;
-                }finally
+                }
+                finally
                 {
                     client.Disconnect(true);
                     client.Dispose();
@@ -50,15 +54,15 @@ namespace WebShop.Application.Services
         public string CreateEmailBody(string email, string emailToken)
         {
             return $@"<html>
-                        <head>
-                        </head>
-                        <body>
-                            <div>
-                                <p>To reset your password please clic the link below</p>
-                                <a href=""http://localhost:4200/passwordreset?email={email}&code={emailToken}"" style=""background: blue; color: white; padding: 8px 15px; border-radius: 8px;"">Reset password</a>
-                            </div>
-                        </body>
-                    </html>";
+                            <head>
+                            </head>
+                            <body>
+                                <div>
+                                    <p>To reset your password please clic the link below</p>
+                                    <a href=""http://localhost:4200/passwordreset?email={email}&code={emailToken}"" style=""background: blue; color: white; padding: 8px 15px; border-radius: 8px;"">Reset password</a>
+                                </div>
+                            </body>
+                        </html>";
         }
     }
 }
